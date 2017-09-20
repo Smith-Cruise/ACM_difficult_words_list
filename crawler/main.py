@@ -3,10 +3,11 @@ import threading
 
 lock_task = threading.Lock()
 lock_list = threading.Lock()
-task_id = 1
-task_end_id = 1754
+task_id = 1001
+task_end_id = 3262
 word_dict = {}
 word_list = []
+thread_number = 20
 
 
 def get_task():
@@ -25,7 +26,7 @@ def catch():
     retry = 0
     while temp_id != 0:
         try:
-            temp_list = my_tool.get_remote_word_dzkj('http://acm.uestc.edu.cn/problem/data/'+str(temp_id))
+            temp_list = my_tool.get_remote_word_acmhit('http://acm.hit.edu.cn/hojx/showproblem/'+str(temp_id))
             print('success', temp_id)
             write_to_list(temp_list)
             temp_id = get_task()
@@ -44,7 +45,7 @@ def write_to_list(temp_list):
 
 
 threads = []
-for i in range(100):
+for i in range(thread_number):
     t = threading.Thread(target=catch)
     t.start()
     threads.append(t)
@@ -68,5 +69,5 @@ word_dict.clear()
 for i in sorted_list:
     word_dict[i[0]] = i[1]
 
-my_tool.write_to_file(word_dict, 'dzkj.json')
+my_tool.write_to_file(word_dict, 'acmhit.json')
 print('end process')

@@ -50,9 +50,10 @@ def text_is_valid(text):
         return False
 
 
-def get_remote_word_hdoj(url):
+def get_remote_word_hzdzkj(url):
     """
-    this rule for HangDian OJ
+    杭州电子科技大学
+    http://acm.hdu.edu.cn/listproblem.php?vol=1
     """
     r = requests.get(url)
     text = r.text
@@ -72,9 +73,10 @@ def get_remote_word_hdoj(url):
     return str_list
 
 
-def get_remote_word_zjoj(url):
+def get_remote_word_zj(url):
     """
-    this rule for ZheJiang OJ
+    浙江大学
+    http://acm.zju.edu.cn/onlinejudge/
     """
     r = requests.get(url)
     text = r.text
@@ -87,9 +89,10 @@ def get_remote_word_zjoj(url):
     return word_list
 
 
-def get_remote_word_poj(url):
+def get_remote_word_bj(url):
     """
-    this rule for POJ
+    北京大学
+    http://poj.org/
     """
     r = requests.get(url)
     text = r.text
@@ -102,26 +105,27 @@ def get_remote_word_poj(url):
                 word_list.append(each_contents.string)
     return word_list
 
-
-def get_remote_word_ural(url):
-    """
-    this rule for http://acm.timus.ru/problemset.aspx
-    """
-    r = requests.get(url)
-    text = r.text
-    soup = BeautifulSoup(text, 'lxml')
-    content = soup.select('.problem_par_normal')
-    word_list = []
-    for each_content in content:
-        for each_contents in each_content.contents:
-            if each_contents.string is not None:
-                word_list.append(each_contents.string)
-    return word_list
+# didn't use it, because it is so slow
+# def get_remote_word_ural(url):
+#     """
+#     this rule for http://acm.timus.ru/problemset.aspx
+#     """
+#     r = requests.get(url)
+#     text = r.text
+#     soup = BeautifulSoup(text, 'lxml')
+#     content = soup.select('.problem_par_normal')
+#     word_list = []
+#     for each_content in content:
+#         for each_contents in each_content.contents:
+#             if each_contents.string is not None:
+#                 word_list.append(each_contents.string)
+#     return word_list
 
 
 def get_remote_word_dzkj(url):
     """
-    http://acm.uestc.edu.cn/#/problem/show/1
+    电子科技大学
+    http://acm.uestc.edu.cn/#/
     """
     r = requests.get(url)
     text = r.text
@@ -131,10 +135,53 @@ def get_remote_word_dzkj(url):
     return str_list
 
 
-def get_remote_word_nbgc(url):
+def get_remote_word_fz(url):
     """
-    https://ac.2333.moe/Problem/view.xhtml?id=1000
+    福州大学
+    http://acm.fzu.edu.cn/index.php
     """
     r = requests.get(url)
     text = r.text
-    soup = BeautifulSoup.select('.contents div')
+    soup = BeautifulSoup(text, 'lxml')
+    content = soup.select('.pro_desc')
+    str_list = []
+    for each_content in content:
+        str_list.append(each_content.text)
+    return str_list
+
+
+def get_remote_word_acdream(url):
+    """
+    AcDream
+    http://acdream.info/problem/list
+    """
+    r = requests.get(url)
+    text = r.text
+    soup = BeautifulSoup(text, 'lxml')
+    content = soup.select('.prob-content')
+    str_list = []
+    for each_content in content:
+        str_list.append(each_content.text)
+    return str_list
+
+
+def get_remote_word_acmhit(url):
+    """
+    acm hit
+    http://acm.hit.edu.cn/hojx/problem/
+    """
+    r = requests.get(url)
+    text = r.text
+    soup = BeautifulSoup(text, 'lxml')
+    content = soup.select('.panel-body')
+    str_list = []
+    for each_content in content:
+        str_list.append(each_content.text)
+    return str_list
+
+
+
+
+
+
+
