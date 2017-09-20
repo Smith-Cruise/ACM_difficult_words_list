@@ -25,11 +25,13 @@
 | cet4.json                     | 4级单词词汇        |
 | cet6.json                     | 6级单词词汇        |
 | stop_words.json               | 停用词列表         |
-| words_in_cet4.json            | 在4级词汇表中的acm词汇 |
-| words_in_cet6.json            | 在6级词汇表中的acm词汇 |
+| words_in_cet4.json            | 在4级词汇表中的ACM词汇 |
+| words_in_cet6.json            | 在6级词汇表中的ACM词汇 |
 
 
 
 ### 数据下载地址
 
-请去`data`目录下载
+`json`数据请去`data`目录下载
+
+`csv`文件请去`release`下载，`release`中只提供`all_filter_by_stop_words.json`,`words_in_cet4.json`,`words_in_cet6.json`的csv文件，如有需要，请自行写`python`语言，范本在`exporter.py`中
