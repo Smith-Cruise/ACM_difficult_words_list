@@ -16,3 +16,6 @@
 | acm hit  | http://acm.hit.edu.cn/hojx/problem/      | acmhit.json   | 3261  |
 | 全部集合     |                                          | all.json      | 18317 |
 
+### 数据下载地址
+
+请去`release`处下载，[点我传送]: https://github.com/Smith-Curise/ACM_difficult_words_list/releases/tag/v1.0
