@@ -16,6 +16,20 @@
 | acm hit  | http://acm.hit.edu.cn/hojx/problem/      | acmhit.json   | 3261  |
 | 全部集合     |                                          | all.json      | 18317 |
 
+### 数据说明
+
+| 文件名                           | 说明            |
+| ----------------------------- | ------------- |
+| all.json                      | 所有单词数据，未处理    |
+| all_filter_by_stop_words.json | 所有单词数据，过滤停用词  |
+| cet4.json                     | 4级单词词汇        |
+| cet6.json                     | 6级单词词汇        |
+| stop_words.json               | 停用词列表         |
+| words_in_cet4.json            | 在4级词汇表中的acm词汇 |
+| words_in_cet6.json            | 在6级词汇表中的acm词汇 |
+
+
+
 ### 数据下载地址
 
-请去`release`处下载，https://github.com/Smith-Curise/ACM_difficult_words_list/releases/tag/v1.0
+请去`data`目录下载
