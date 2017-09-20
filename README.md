@@ -1,7 +1,7 @@
 # ACM_difficult_words_list
 ### 简易说明 Simple introduce
 
-所有数据全部来源于各大ACM网站，并且已经按照单词出现次数从高到低排序，采集题目总数18317题。data目录为采集到的单词数据，crawler为爬虫源文件。
+本人特意整理的ACM必备词汇表，所有数据全部来源于各大ACM网站，并且已经按照单词出现次数从高到低排序，采集题目总数18317题。data目录为采集到的单词数据，crawler为爬虫源文件。
 
 ### 数据来源 Data source
 
