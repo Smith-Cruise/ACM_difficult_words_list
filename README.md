@@ -16,7 +16,7 @@
 | acm hit  | http://acm.hit.edu.cn/hojx/problem/      | acmhit.json   | 3261  |
 | 全部集合     |                                          | all.json      | 18317 |
 
-### 数据说明
+### 数据说明 Data introduce
 
 | 文件名                           | 说明            |
 | ----------------------------- | ------------- |
@@ -28,9 +28,11 @@
 | words_in_cet4.json            | 在4级词汇表中的ACM词汇 |
 | words_in_cet6.json            | 在6级词汇表中的ACM词汇 |
 
+### 未完成 wait to do
 
+* 词语翻译
 
-### 数据下载地址
+### 数据下载地址 Download
 
 `json`数据请去`data`目录下载
 
