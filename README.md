@@ -18,4 +18,4 @@
 
 ### 数据下载地址
 
-请去`release`处下载，[点我传送]: https://github.com/Smith-Curise/ACM_difficult_words_list/releases/tag/v1.0
+请去`release`处下载，https://github.com/Smith-Curise/ACM_difficult_words_list/releases/tag/v1.0
