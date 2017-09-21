@@ -18,22 +18,20 @@
 
 ### 数据说明 Data introduce
 
-| 文件名                           | 说明            |
-| ----------------------------- | ------------- |
-| all.json                      | 所有单词数据，未处理    |
-| all_filter_by_stop_words.json | 所有单词数据，过滤停用词  |
-| cet4.json                     | 4级单词词汇        |
-| cet6.json                     | 6级单词词汇        |
-| stop_words.json               | 停用词列表         |
-| words_in_cet4.json            | 在4级词汇表中的ACM词汇 |
-| words_in_cet6.json            | 在6级词汇表中的ACM词汇 |
-
-### 未完成 wait to do
-
-* 词语翻译
+| 文件名                           | 说明                 |
+| ----------------------------- | ------------------ |
+| all.json                      | 所有单词数据，未处理         |
+| all_filter_by_stop_words.json | 所有单词数据，过滤停用词       |
+| cet4.json                     | 4级单词词汇             |
+| cet6.json                     | 6级单词词汇             |
+| stop_words.json               | 停用词列表              |
+| words_in_cet4.json            | 在4级词汇表中的ACM词汇      |
+| words_in_cet6.json            | 在6级词汇表中的ACM词汇      |
+| words_in_cet4_translated.json | 在4级词汇表中的ACM词汇（带翻译） |
+| words_in_cet6_translated.json | 在6级词汇表中的ACM词汇（带翻译） |
 
 ### 数据下载地址 Download
 
 `json`数据请去`data`目录下载
 
-`csv`文件请去`release`下载，`release`中只提供`all_filter_by_stop_words.json`,`words_in_cet4.json`,`words_in_cet6.json`的csv文件，如有需要，请自行写`python`语言，范本在`exporter.py`中
+`csv`文件请去`release`下载，`release`中只提供`all_filter_by_stop_words.json`,`words_in_cet4_translated.json`,`words_in_cet6_translated.json`的csv文件，如有需要，请自行写`python`语言，范本在`exporter.py`中
